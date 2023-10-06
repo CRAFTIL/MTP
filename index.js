@@ -1,7 +1,4 @@
-(function ($) {
-    $(document).ready(function () {
-
-        function appendQuestion(div, question) {  
+ function appendQuestion(div, question) {  
             let wrapper = document.createElement("div")
             wrapper.className = "question-wrraper"
             
@@ -20,6 +17,11 @@
         
         
             }
+
+function doThat($) {
+
+
+       
         
         document.getElementsByClassName("questions-wrraper").forEach(div => appendQuestion(div, "כן או לא?"))
 
@@ -496,7 +498,7 @@ $('.mtpediaButton.mtdiagrams .buttons a').click(function (e) {
   }); 
                      
     
-}); 
+
     
 /** Cards **/
     $('.cards-content-wrraper .choose-card').on('click', function(e){
@@ -610,5 +612,5 @@ $('.mtpediaButton.mtdiagrams .buttons a').click(function (e) {
     $('p:empty').remove();
 
     
-}(jQuery));
+};
 
